@@ -35,23 +35,23 @@ public class YanlisEmail {
     @Test
     public void test1() {
         // 3.Sign in butonunabasalim
-        driver.findElement(By.xpath("//*[@class='login']")).click();
+      driver.findElement(By.className("login")).click();
 
     }
 
     @Test
     public void test2() {
 // 4.Email kutusuna @isareti olmayan bir mail yazipenter'a
-        driver.findElement(By.xpath("//*[@id='email_create']")).sendKeys("denemegmail.com");
-
+      //  driver.findElement(By.xpath("//*[@id='email_create']")).sendKeys("denemegmail.com");
+        driver.findElement(By.id("email_create")).sendKeys("denemegmail.com");
     }
 
     @Test
     public void test3() {
 // bastigimizda "Invalid email address" uyarisi ciktigini testedelim
-        driver.findElement(By.id("SubmitCreate")).click();
-        WebElement invalidUyari = driver.findElement(By.xpath("//*[text()='Invalid email address.']"));
-        Assert.assertTrue(invalidUyari.isDisplayed());
+       driver.findElement(By.id("SubmitCreate")).click();
+       WebElement invalidUyari = driver.findElement(By.xpath("//*[text()='Invalid email address.']"));
+       Assert.assertTrue(invalidUyari.isDisplayed());
     }
 
 
