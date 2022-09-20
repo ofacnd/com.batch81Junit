@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="com.batch81Junit" options="--add-exports jdk.scripting.nashorn/jdk.nashorn.internal.runtime=ALL-UNNAMED" />
+      <module name="com.batch81Junit" options="" />
     </option>
   </component>
 </project>

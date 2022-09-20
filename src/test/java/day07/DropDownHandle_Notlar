@@ -1,0 +1,8 @@
+
+selectByVisibleText () / deselectByVisibleText ()   görüntülenen metne göre bir seçeneği seçer / seçimi kaldırır
+selectByValue () / deselectByValue ()   "value" öz niteliğinin değerine göre bir seçeneği seçer / seçimi kaldırır
+selectByIndex () / deselectByIndex ()   indeksine göre bir seçeneği seçer / seçimi kaldırır
+isMultiple ()   açılır öğe bir seferde birden fazla seçime izin veriyorsa, DOĞRU döndürür; Aksi takdirde YANLIŞ
+Hiçbirini seçme() önceden seçilen tüm seçeneklerin seçimini kaldırır
+   ---------------------------
+

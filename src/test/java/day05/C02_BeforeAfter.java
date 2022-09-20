@@ -30,17 +30,6 @@ public class C02_BeforeAfter {
         driver.close();
     }
 
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void method2() {
         //1 defa before methodu çalışır
