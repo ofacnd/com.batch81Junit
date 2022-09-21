@@ -21,6 +21,7 @@ public class C02_Junit {
     @After
     public void after() {
         System.out.println("After");
+
     }
 
 
@@ -28,6 +29,7 @@ public class C02_Junit {
     @Test
     public void test1() {
         System.out.println("Test 01");
+
     }
     @Test
     public void test2() {
