@@ -24,11 +24,10 @@ public class ODEV_2 extends TestBaseBeforeAfter {
         driver.findElement(By.xpath("//*[@aria-label='Play']")).click();
 
         //videoyu calistirdiginizi test edin
-      //  driver.switchTo().defaultContent();
-      //  Thread.sleep(1000);
-      //  actions.moveToElement(driver.findElement(By.xpath("//*[@class='video-stream html5-main-video']"))).perform();
-      //  Thread.sleep(1500);
-//
-      //  Assert.assertFalse(driver.findElement(By.xpath("//*[@title='Pause (k)']")).isDisplayed());
+       //driver.switchTo().defaultContent();
+       Thread.sleep(1000);
+      actions.moveToElement(driver.findElement(By.xpath("//*[@class='video-stream html5-main-video']"))).perform();
+       // Thread.sleep(1500);
+       Assert.assertFalse(driver.findElement(By.xpath("//*[@aria-label='Play']")).isDisplayed());
     }
 }
