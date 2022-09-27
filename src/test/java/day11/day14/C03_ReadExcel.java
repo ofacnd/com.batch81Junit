@@ -1,4 +1,4 @@
-package day14;
+package day11.day14;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -21,10 +21,10 @@ public class C03_ReadExcel {
 
        String dosyaYolu = "src/main/resources/ulkeler.xlsx";
        FileInputStream fis = new FileInputStream(dosyaYolu); //Olusturmuş olduğumuz dosyayı sistemde işleme alır
-       Workbook workbook = WorkbookFactory.create(fis);
+       Workbook workbook = WorkbookFactory.create(fis);  //BUrada excel`i olusturuyoruz.
        String actualData = workbook.
-               getSheet("Sayfa1")
-               .getRow(satir-1).
+               getSheet("Sayfa1").
+               getRow(satir-1).
                //Yukarida tanimlanan 12  index 0dan basladigi icin 13. cell`e gidecek o yuzden -1 diyerek 12. cell`e ulasmasini sagliyoruz.
                getCell(sutun-1) //  Ayni sey burada da gecerli.
                .toString();
